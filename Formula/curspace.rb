@@ -5,21 +5,21 @@
 class Curspace < Formula
   desc "Terminal-first project discovery and workspace launcher for Cursor IDE"
   homepage "https://github.com/frknikiz/curspace"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/frknikiz/curspace/releases/download/v1.4.0/curspace_1.4.0_darwin_amd64.tar.gz"
-      sha256 "e4e38f276afe74b79cf6c2a434fcc8139cfb2af4b31f3c208f464ea51fcec72b"
+      url "https://github.com/frknikiz/curspace/releases/download/v1.4.1/curspace_1.4.1_darwin_amd64.tar.gz"
+      sha256 "4369a1ea678505089374448079a5cb8f870efe07abd4c5a3ef47e79ababf2669"
 
       define_method(:install) do
         bin.install "curspace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/frknikiz/curspace/releases/download/v1.4.0/curspace_1.4.0_darwin_arm64.tar.gz"
-      sha256 "c12f384aba9feba2fb45d9b8a431ecfbce60b7adc09750366d418fcfd938de26"
+      url "https://github.com/frknikiz/curspace/releases/download/v1.4.1/curspace_1.4.1_darwin_arm64.tar.gz"
+      sha256 "d9c1e80152021a513c65330d212e32f73236abe356343d9e23c1929ef6cd5698"
 
       define_method(:install) do
         bin.install "curspace"
@@ -29,15 +29,15 @@ class Curspace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frknikiz/curspace/releases/download/v1.4.0/curspace_1.4.0_linux_amd64.tar.gz"
-      sha256 "6a8e5f916a44726f11c222b4e297e056e802f3ce94c32a7c612603d53ecba68a"
+      url "https://github.com/frknikiz/curspace/releases/download/v1.4.1/curspace_1.4.1_linux_amd64.tar.gz"
+      sha256 "dafb683ee05db9b69ae92dfec1a959dd6b33830b674883d56702e30d860e61c7"
       define_method(:install) do
         bin.install "curspace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/frknikiz/curspace/releases/download/v1.4.0/curspace_1.4.0_linux_arm64.tar.gz"
-      sha256 "0fa74048e6f3031d386626f1f5b36e498f57d5e33131c9a78bed5c0bc17f2e23"
+      url "https://github.com/frknikiz/curspace/releases/download/v1.4.1/curspace_1.4.1_linux_arm64.tar.gz"
+      sha256 "41710d8d86b6b3089754116790179e93acbb48eebf812763e4188a5c96aa6e30"
       define_method(:install) do
         bin.install "curspace"
       end
